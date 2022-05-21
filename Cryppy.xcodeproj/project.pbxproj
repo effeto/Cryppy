@@ -13,6 +13,35 @@
 		A55FD6592838DEE8009A0568 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A55FD6572838DEE8009A0568 /* Main.storyboard */; };
 		A55FD65B2838DEE9009A0568 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A55FD65A2838DEE9009A0568 /* Assets.xcassets */; };
 		A55FD65E2838DEE9009A0568 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A55FD65C2838DEE9009A0568 /* LaunchScreen.storyboard */; };
+		A55FD66B2838E147009A0568 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55FD66A2838E147009A0568 /* View.swift */; };
+		A55FD66D2838E712009A0568 /* OverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55FD66C2838E712009A0568 /* OverviewView.swift */; };
+		A55FD66F2838E721009A0568 /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55FD66E2838E721009A0568 /* OverviewViewController.swift */; };
+		A55FD6712838EA3D009A0568 /* PortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55FD6702838EA3D009A0568 /* PortfolioViewController.swift */; };
+		A55FD6732838EA55009A0568 /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55FD6722838EA55009A0568 /* ChartsViewController.swift */; };
+		A55FD6752838EA62009A0568 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55FD6742838EA62009A0568 /* ProfileViewController.swift */; };
+		A55FD6772838EA93009A0568 /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55FD6762838EA93009A0568 /* PortfolioView.swift */; };
+		A55FD6792838EA9D009A0568 /* ChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55FD6782838EA9D009A0568 /* ChartsView.swift */; };
+		A55FD67B2838EAAC009A0568 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55FD67A2838EAAC009A0568 /* ProfileView.swift */; };
+		A55FD68F2838F3C7009A0568 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A55FD67D2838F3C7009A0568 /* Poppins-ExtraLight.ttf */; };
+		A55FD6902838F3C7009A0568 /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A55FD67E2838F3C7009A0568 /* Poppins-ThinItalic.ttf */; };
+		A55FD6912838F3C7009A0568 /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A55FD67F2838F3C7009A0568 /* Poppins-ExtraLightItalic.ttf */; };
+		A55FD6922838F3C7009A0568 /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A55FD6802838F3C7009A0568 /* Poppins-BoldItalic.ttf */; };
+		A55FD6932838F3C7009A0568 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A55FD6812838F3C7009A0568 /* Poppins-Light.ttf */; };
+		A55FD6942838F3C7009A0568 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A55FD6822838F3C7009A0568 /* Poppins-Medium.ttf */; };
+		A55FD6952838F3C7009A0568 /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A55FD6832838F3C7009A0568 /* Poppins-SemiBoldItalic.ttf */; };
+		A55FD6962838F3C7009A0568 /* Poppins-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A55FD6842838F3C7009A0568 /* Poppins-ExtraBoldItalic.ttf */; };
+		A55FD6972838F3C7009A0568 /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A55FD6852838F3C7009A0568 /* Poppins-ExtraBold.ttf */; };
+		A55FD6982838F3C7009A0568 /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A55FD6862838F3C7009A0568 /* Poppins-BlackItalic.ttf */; };
+		A55FD6992838F3C7009A0568 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A55FD6872838F3C7009A0568 /* Poppins-Regular.ttf */; };
+		A55FD69A2838F3C7009A0568 /* Poppins-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A55FD6882838F3C7009A0568 /* Poppins-LightItalic.ttf */; };
+		A55FD69B2838F3C7009A0568 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A55FD6892838F3C7009A0568 /* Poppins-Bold.ttf */; };
+		A55FD69C2838F3C7009A0568 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A55FD68A2838F3C7009A0568 /* Poppins-Black.ttf */; };
+		A55FD69D2838F3C7009A0568 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A55FD68B2838F3C7009A0568 /* Poppins-Thin.ttf */; };
+		A55FD69E2838F3C7009A0568 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A55FD68C2838F3C7009A0568 /* Poppins-SemiBold.ttf */; };
+		A55FD69F2838F3C7009A0568 /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A55FD68D2838F3C7009A0568 /* Poppins-Italic.ttf */; };
+		A55FD6A02838F3C7009A0568 /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A55FD68E2838F3C7009A0568 /* Poppins-MediumItalic.ttf */; };
+		A55FD6A2283917E2009A0568 /* Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55FD6A1283917E2009A0568 /* Tokens.swift */; };
+		A55FD6A428391F64009A0568 /* TokensTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55FD6A328391F64009A0568 /* TokensTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +53,35 @@
 		A55FD65A2838DEE9009A0568 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A55FD65D2838DEE9009A0568 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A55FD65F2838DEE9009A0568 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A55FD66A2838E147009A0568 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		A55FD66C2838E712009A0568 /* OverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewView.swift; sourceTree = "<group>"; };
+		A55FD66E2838E721009A0568 /* OverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewController.swift; sourceTree = "<group>"; };
+		A55FD6702838EA3D009A0568 /* PortfolioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioViewController.swift; sourceTree = "<group>"; };
+		A55FD6722838EA55009A0568 /* ChartsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
+		A55FD6742838EA62009A0568 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A55FD6762838EA93009A0568 /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
+		A55FD6782838EA9D009A0568 /* ChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsView.swift; sourceTree = "<group>"; };
+		A55FD67A2838EAAC009A0568 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		A55FD67D2838F3C7009A0568 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
+		A55FD67E2838F3C7009A0568 /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
+		A55FD67F2838F3C7009A0568 /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		A55FD6802838F3C7009A0568 /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
+		A55FD6812838F3C7009A0568 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		A55FD6822838F3C7009A0568 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		A55FD6832838F3C7009A0568 /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		A55FD6842838F3C7009A0568 /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		A55FD6852838F3C7009A0568 /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
+		A55FD6862838F3C7009A0568 /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
+		A55FD6872838F3C7009A0568 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		A55FD6882838F3C7009A0568 /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
+		A55FD6892838F3C7009A0568 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		A55FD68A2838F3C7009A0568 /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
+		A55FD68B2838F3C7009A0568 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
+		A55FD68C2838F3C7009A0568 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		A55FD68D2838F3C7009A0568 /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
+		A55FD68E2838F3C7009A0568 /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
+		A55FD6A1283917E2009A0568 /* Tokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokens.swift; sourceTree = "<group>"; };
+		A55FD6A328391F64009A0568 /* TokensTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokensTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +114,84 @@
 		A55FD6502838DEE8009A0568 /* Cryppy */ = {
 			isa = PBXGroup;
 			children = (
-				A55FD6512838DEE8009A0568 /* AppDelegate.swift */,
-				A55FD6532838DEE8009A0568 /* SceneDelegate.swift */,
-				A55FD6552838DEE8009A0568 /* ViewController.swift */,
-				A55FD6572838DEE8009A0568 /* Main.storyboard */,
-				A55FD65A2838DEE9009A0568 /* Assets.xcassets */,
-				A55FD65C2838DEE9009A0568 /* LaunchScreen.storyboard */,
+				A55FD6672838DF22009A0568 /* Models */,
+				A55FD6662838DF1A009A0568 /* Views */,
+				A55FD6652838DF0F009A0568 /* Controllers */,
+				A55FD6692838DF3F009A0568 /* Extra */,
 				A55FD65F2838DEE9009A0568 /* Info.plist */,
 			);
 			path = Cryppy;
+			sourceTree = "<group>";
+		};
+		A55FD6652838DF0F009A0568 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A55FD6552838DEE8009A0568 /* ViewController.swift */,
+				A55FD66E2838E721009A0568 /* OverviewViewController.swift */,
+				A55FD6702838EA3D009A0568 /* PortfolioViewController.swift */,
+				A55FD6722838EA55009A0568 /* ChartsViewController.swift */,
+				A55FD6742838EA62009A0568 /* ProfileViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A55FD6662838DF1A009A0568 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A55FD66A2838E147009A0568 /* View.swift */,
+				A55FD66C2838E712009A0568 /* OverviewView.swift */,
+				A55FD6762838EA93009A0568 /* PortfolioView.swift */,
+				A55FD6A328391F64009A0568 /* TokensTableViewCell.swift */,
+				A55FD6782838EA9D009A0568 /* ChartsView.swift */,
+				A55FD67A2838EAAC009A0568 /* ProfileView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A55FD6672838DF22009A0568 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A55FD6A1283917E2009A0568 /* Tokens.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A55FD6692838DF3F009A0568 /* Extra */ = {
+			isa = PBXGroup;
+			children = (
+				A55FD6512838DEE8009A0568 /* AppDelegate.swift */,
+				A55FD6532838DEE8009A0568 /* SceneDelegate.swift */,
+				A55FD6572838DEE8009A0568 /* Main.storyboard */,
+				A55FD65A2838DEE9009A0568 /* Assets.xcassets */,
+				A55FD65C2838DEE9009A0568 /* LaunchScreen.storyboard */,
+				A55FD67C2838F3C7009A0568 /* Fonts */,
+			);
+			path = Extra;
+			sourceTree = "<group>";
+		};
+		A55FD67C2838F3C7009A0568 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A55FD67D2838F3C7009A0568 /* Poppins-ExtraLight.ttf */,
+				A55FD67E2838F3C7009A0568 /* Poppins-ThinItalic.ttf */,
+				A55FD67F2838F3C7009A0568 /* Poppins-ExtraLightItalic.ttf */,
+				A55FD6802838F3C7009A0568 /* Poppins-BoldItalic.ttf */,
+				A55FD6812838F3C7009A0568 /* Poppins-Light.ttf */,
+				A55FD6822838F3C7009A0568 /* Poppins-Medium.ttf */,
+				A55FD6832838F3C7009A0568 /* Poppins-SemiBoldItalic.ttf */,
+				A55FD6842838F3C7009A0568 /* Poppins-ExtraBoldItalic.ttf */,
+				A55FD6852838F3C7009A0568 /* Poppins-ExtraBold.ttf */,
+				A55FD6862838F3C7009A0568 /* Poppins-BlackItalic.ttf */,
+				A55FD6872838F3C7009A0568 /* Poppins-Regular.ttf */,
+				A55FD6882838F3C7009A0568 /* Poppins-LightItalic.ttf */,
+				A55FD6892838F3C7009A0568 /* Poppins-Bold.ttf */,
+				A55FD68A2838F3C7009A0568 /* Poppins-Black.ttf */,
+				A55FD68B2838F3C7009A0568 /* Poppins-Thin.ttf */,
+				A55FD68C2838F3C7009A0568 /* Poppins-SemiBold.ttf */,
+				A55FD68D2838F3C7009A0568 /* Poppins-Italic.ttf */,
+				A55FD68E2838F3C7009A0568 /* Poppins-MediumItalic.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +252,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A55FD6912838F3C7009A0568 /* Poppins-ExtraLightItalic.ttf in Resources */,
+				A55FD69C2838F3C7009A0568 /* Poppins-Black.ttf in Resources */,
+				A55FD69A2838F3C7009A0568 /* Poppins-LightItalic.ttf in Resources */,
+				A55FD69D2838F3C7009A0568 /* Poppins-Thin.ttf in Resources */,
+				A55FD6982838F3C7009A0568 /* Poppins-BlackItalic.ttf in Resources */,
+				A55FD69E2838F3C7009A0568 /* Poppins-SemiBold.ttf in Resources */,
+				A55FD69B2838F3C7009A0568 /* Poppins-Bold.ttf in Resources */,
+				A55FD68F2838F3C7009A0568 /* Poppins-ExtraLight.ttf in Resources */,
+				A55FD6922838F3C7009A0568 /* Poppins-BoldItalic.ttf in Resources */,
+				A55FD6932838F3C7009A0568 /* Poppins-Light.ttf in Resources */,
+				A55FD6972838F3C7009A0568 /* Poppins-ExtraBold.ttf in Resources */,
 				A55FD65E2838DEE9009A0568 /* LaunchScreen.storyboard in Resources */,
+				A55FD6952838F3C7009A0568 /* Poppins-SemiBoldItalic.ttf in Resources */,
+				A55FD6962838F3C7009A0568 /* Poppins-ExtraBoldItalic.ttf in Resources */,
+				A55FD6992838F3C7009A0568 /* Poppins-Regular.ttf in Resources */,
+				A55FD6902838F3C7009A0568 /* Poppins-ThinItalic.ttf in Resources */,
+				A55FD6942838F3C7009A0568 /* Poppins-Medium.ttf in Resources */,
 				A55FD65B2838DEE9009A0568 /* Assets.xcassets in Resources */,
+				A55FD69F2838F3C7009A0568 /* Poppins-Italic.ttf in Resources */,
+				A55FD6A02838F3C7009A0568 /* Poppins-MediumItalic.ttf in Resources */,
 				A55FD6592838DEE8009A0568 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +283,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A55FD66B2838E147009A0568 /* View.swift in Sources */,
+				A55FD6772838EA93009A0568 /* PortfolioView.swift in Sources */,
+				A55FD6732838EA55009A0568 /* ChartsViewController.swift in Sources */,
 				A55FD6562838DEE8009A0568 /* ViewController.swift in Sources */,
 				A55FD6522838DEE8009A0568 /* AppDelegate.swift in Sources */,
+				A55FD66D2838E712009A0568 /* OverviewView.swift in Sources */,
 				A55FD6542838DEE8009A0568 /* SceneDelegate.swift in Sources */,
+				A55FD6A428391F64009A0568 /* TokensTableViewCell.swift in Sources */,
+				A55FD6752838EA62009A0568 /* ProfileViewController.swift in Sources */,
+				A55FD67B2838EAAC009A0568 /* ProfileView.swift in Sources */,
+				A55FD6712838EA3D009A0568 /* PortfolioViewController.swift in Sources */,
+				A55FD66F2838E721009A0568 /* OverviewViewController.swift in Sources */,
+				A55FD6792838EA9D009A0568 /* ChartsView.swift in Sources */,
+				A55FD6A2283917E2009A0568 /* Tokens.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +449,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,7 +461,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,6 +478,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,7 +490,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
