@@ -57,7 +57,7 @@ class TokensTableViewCell: UITableViewCell {
     
     let coinNameLabel: UILabel = {
         let label = UILabel()
-        label.frame = CGRect(x: 0, y: 0, width: 30, height: 21)
+        label.frame = CGRect(x: 0, y: 0, width: 35, height: 21)
         label.backgroundColor = .clear
         label.textColor = UIColor(red: 0.004, green: 0.173, blue: 0.341, alpha: 1)
         label.font = UIFont(name: "Poppins-SemiBold", size: 14)
@@ -67,10 +67,9 @@ class TokensTableViewCell: UITableViewCell {
     func setCoinNameLabel() {
         cellView.addSubview(coinNameLabel)
         coinNameLabel.translatesAutoresizingMaskIntoConstraints = false
-        coinNameLabel.widthAnchor.constraint(equalToConstant: 33).isActive = true
+        coinNameLabel.widthAnchor.constraint(equalToConstant: 38).isActive = true
         coinNameLabel.heightAnchor.constraint(equalToConstant: 21).isActive = true
         coinNameLabel.leadingAnchor.constraint(equalTo: coinImage.leadingAnchor, constant: 40).isActive = true
-//        coinNameLabel.centerXAnchor.constraint(equalTo: cellView.centerXAnchor).isActive = true
         coinNameLabel.topAnchor.constraint(equalTo: cellView.topAnchor, constant: 5).isActive = true
     }
     
@@ -88,8 +87,7 @@ class TokensTableViewCell: UITableViewCell {
         coinPrice.translatesAutoresizingMaskIntoConstraints = false
         coinPrice.widthAnchor.constraint(equalToConstant: 91).isActive = true
         coinPrice.heightAnchor.constraint(equalToConstant: 18).isActive = true
-        coinPrice.leadingAnchor.constraint(equalTo: coinNameLabel.leadingAnchor, constant: 40).isActive = true
-//        coinPrice.centerXAnchor.constraint(equalTo: cellView.centerXAnchor).isActive = true
+        coinPrice.leadingAnchor.constraint(equalTo: coinNameLabel.leadingAnchor, constant: 45).isActive = true
         coinPrice.topAnchor.constraint(equalTo: cellView.topAnchor, constant: 7.5).isActive = true
     }
 

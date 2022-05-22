@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A52FE1022839789900D3E8E0 /* ApiCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52FE1012839789900D3E8E0 /* ApiCaller.swift */; };
 		A55FD6522838DEE8009A0568 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55FD6512838DEE8009A0568 /* AppDelegate.swift */; };
 		A55FD6542838DEE8009A0568 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55FD6532838DEE8009A0568 /* SceneDelegate.swift */; };
 		A55FD6562838DEE8009A0568 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55FD6552838DEE8009A0568 /* ViewController.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A52FE1012839789900D3E8E0 /* ApiCaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCaller.swift; sourceTree = "<group>"; };
 		A55FD64E2838DEE8009A0568 /* Cryppy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cryppy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A55FD6512838DEE8009A0568 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A55FD6532838DEE8009A0568 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 				A55FD65A2838DEE9009A0568 /* Assets.xcassets */,
 				A55FD65C2838DEE9009A0568 /* LaunchScreen.storyboard */,
 				A55FD67C2838F3C7009A0568 /* Fonts */,
+				A52FE1012839789900D3E8E0 /* ApiCaller.swift */,
 			);
 			path = Extra;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				A55FD6772838EA93009A0568 /* PortfolioView.swift in Sources */,
 				A55FD6732838EA55009A0568 /* ChartsViewController.swift in Sources */,
 				A55FD6562838DEE8009A0568 /* ViewController.swift in Sources */,
+				A52FE1022839789900D3E8E0 /* ApiCaller.swift in Sources */,
 				A55FD6522838DEE8009A0568 /* AppDelegate.swift in Sources */,
 				A55FD66D2838E712009A0568 /* OverviewView.swift in Sources */,
 				A55FD6542838DEE8009A0568 /* SceneDelegate.swift in Sources */,

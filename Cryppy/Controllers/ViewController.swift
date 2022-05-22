@@ -28,6 +28,7 @@ class ViewController: UIViewController {
         let overviewVC = OverviewViewController()
         overviewVC.modalPresentationStyle = .fullScreen
         overviewVC.createTabBar()
+        ApiCaller.shared.getAllIcons()
         show(overviewVC, sender: self)
         print("Working")
     }

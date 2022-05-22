@@ -407,6 +407,18 @@ class PortfolioView: UIView {
         nftImageView.topAnchor.constraint(equalTo: self.topAnchor, constant: 519).isActive = true
     }
     
+    lazy var searchController: UISearchController = {
+        let s = UISearchController(searchResultsController: nil)
+        s.obscuresBackgroundDuringPresentation = false
+        s.searchBar.placeholder = "Tokens"
+        s.searchBar.searchBarStyle = .prominent
+        tokensTableView.tableHeaderView = s.searchBar
+        
+        return s
+        
+
+    }()
+    
     @objc func addBtnTaped() {
         addBtnAction?()
     }

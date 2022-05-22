@@ -12,18 +12,43 @@ class PortfolioViewController: UIViewController {
     var portfolioVIew = PortfolioView()
     
     var coinsData:[Tokens] = []
+    var filtredCoins:[Tokens] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpView()
-        
+        ApiCaller.shared.getCryptoData {[weak self] result in
+            switch result{
+            case .success(let models):
+                self?.coinsData = models.compactMap({ model in
+                    let price = model.price_usd ?? 0
+                    let formatter = PortfolioViewController.numberFormatter
+                    let priceString = formatter.string(from: NSNumber(value: price))
+                    let iconURL = URL(string: ApiCaller.shared.icons.filter({ icon in
+                        icon.asset_id == model.asset_id
+                    }).first?.url ?? "")
+                    return Tokens(name: model.asset_id,
+                           image: nil,
+                           price: priceString ?? "N/A",
+                           percent: nil,
+                           chart: nil,
+                           isCryprto: model.type_is_crypto,
+                           iconURL: iconURL)
+                })
+                DispatchQueue.main.async {
+                    self?.portfolioVIew.tokensTableView.reloadData()
+                }
+            case .failure(let erorr):
+                print("Error \(erorr)")
+            }
+        }
     }
     
     func setUpView() {
         let mainView = PortfolioView(frame: self.view.frame)
         portfolioVIew = mainView
         view.addSubview(portfolioVIew)
-        coinsData = fetchData()
+//        coinsData = fetchData()
         portfolioVIew.setPortfolipView()
         portfolioVIew.addBtnAction = addBtnAction
         portfolioVIew.copyAction = copyBtnAction
@@ -33,6 +58,8 @@ class PortfolioViewController: UIViewController {
         portfolioVIew.nftBtnAction = nftButtonAction
         portfolioVIew.tokensTableView.delegate = self
         portfolioVIew.tokensTableView.dataSource = self
+        portfolioVIew.searchController.delegate = self
+        portfolioVIew.searchController.searchResultsUpdater = self
     }
     
     func addBtnAction(){
@@ -87,26 +114,46 @@ class PortfolioViewController: UIViewController {
 
 extension PortfolioViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return coinsData.count
+            return coinsData.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = portfolioVIew.tokensTableView.dequeueReusableCell(withIdentifier: TokensTableViewCell().tokensCellID, for: indexPath) as! TokensTableViewCell
-        cell.coinNameLabel.text = coinsData[indexPath.row].name
-        cell.coinImage.image = coinsData[indexPath.row].image
-        cell.coinPrice.text = coinsData[indexPath.row].price
+        if coinsData[indexPath.row].isCryprto != 0 {
+            cell.coinNameLabel.text = coinsData[indexPath.row].name
+            cell.coinPrice.text = coinsData[indexPath.row].price
+            if let url = coinsData[indexPath.row].iconURL {
+                let task = URLSession.shared.dataTask(with: url) { data, _, _ in
+                    if let data = data {
+                        DispatchQueue.main.async {
+                            cell.coinImage.image = UIImage(data: data)
+                        }
+                    }
+                }
+                task.resume()
+            }
+        }
         return cell
     }
     
-    func fetchData() -> [Tokens] {
-        let coin1 = Tokens(name: "ETH", image: UIImage(named: "eth.png"), price: "1.01 (~$2,176.91)", percent: nil, chart: nil)
-        let coin2 = Tokens(name: "SOL", image: UIImage(named: "sol.png"), price: "14.8 (~$891.11)", percent: nil, chart: nil)
-        let coin3 = Tokens(name: "DOT", image: UIImage(named: "dot.png"), price: "37.7 (~$376.58)", percent: nil, chart: nil)
-        let coin4 = Tokens(name: "APE", image: UIImage(named: "ape.png"), price: "8.4 (~$48.1)", percent: nil, chart: nil)
-        let coin5 = Tokens(name: "ADA", image: UIImage(named: "ada.png"), price: "10.2 (~$5.7)", percent: nil, chart: nil)
-        
-        return [coin1, coin2, coin3, coin4, coin5]
+    
+    static let numberFormatter: NumberFormatter = {
+        let formatter = NumberFormatter()
+        formatter.locale = .current
+        formatter.allowsFloats = true
+        formatter.numberStyle = .currency
+        formatter.formatterBehavior = .default
+        return formatter
+    }()
+}
+
+extension PortfolioViewController: UISearchResultsUpdating, UISearchControllerDelegate{
+    func updateSearchResults(for searchController: UISearchController) {
+        if let searchText = searchController.searchBar.text {
+            filtredCoins = coinsData.filter({(coinsData: Tokens) -> Bool in
+                return coinsData.name.lowercased().contains(searchText.lowercased())
+            })
+            portfolioVIew.tokensTableView.reloadData()
+        }
     }
-    
-    
 }
